@@ -6,9 +6,9 @@ export const exerciseOptions = {
     }
   };
 
-export const fetchData = async()=>{
+export const fetchData = async(url, options)=>{
     const response = await fetch(url, options);
     const data = await response.json();
-
+    console.log(data);
     return data;
 }
